@@ -1,7 +1,7 @@
 total = 0
-with open('data/4.txt') as f:
+with open('4.txt') as f:
     repetitions = [1 for i in range(len(f.readlines()))]
-with open('data/4.txt') as f:
+with open('4.txt') as f:
     for i, line in enumerate(f):
         winning, numbers = line.split('|')
         winning =  [n for n in winning.strip().split(' ') if n != ""]

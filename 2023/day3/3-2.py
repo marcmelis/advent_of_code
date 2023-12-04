@@ -1,5 +1,5 @@
 total = 0
-with open('data/3-1.txt') as f:
+with open('3.txt') as f:
     text = f.readlines()
     for line_index, line in enumerate(text):
         gears = [i for i, character in enumerate(line) if character == '*']

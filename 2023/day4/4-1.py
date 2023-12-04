@@ -1,5 +1,5 @@
 total = 0
-with open('data/4.txt') as f:
+with open('4.txt') as f:
     for line in f:
         winning, numbers = line.split('|')
         winning =  [n for n in winning.strip().split(' ') if n != ""]

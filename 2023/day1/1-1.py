@@ -7,7 +7,7 @@ def last_num(line):
 
 
 total = 0
-with open('data/1-1.txt') as f:
+with open('1.txt') as f:
     for line in f:
         total += int(first_num(line) + last_num(line))
 

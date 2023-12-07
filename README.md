@@ -1,7 +1,7 @@
 # Advent of Code
 Eric Wastl [Advent of Code](adventofcode.com).
 
-## DALL·3 generated images for each day in 2023
+## DALL·E 3 generated images for each day in 2023
 
 <table>
   <tr>
@@ -13,7 +13,7 @@ Eric Wastl [Advent of Code](adventofcode.com).
   <tr>
     <td><img src="img/day5.png" /></td>
     <td><img src="img/day6.png" /></td>    
-    <td><img src="img/dayNone.png" /></td>
+    <td><img src="img/day7.png" /></td>
     <td><img src="img/dayNone.png" /></td>
   </tr>
   <tr>

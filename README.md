@@ -14,7 +14,7 @@ Eric Wastl [Advent of Code](adventofcode.com).
     <td><img src="img/day5.png" /></td>
     <td><img src="img/day6.png" /></td>    
     <td><img src="img/day7.png" /></td>
-    <td><img src="img/dayNone.png" /></td>
+    <td><img src="img/day8.png" /></td>
   </tr>
   <tr>
     <td><img src="img/dayNone.png" /></td>

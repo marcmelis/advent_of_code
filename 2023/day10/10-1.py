@@ -19,7 +19,7 @@ class Pipe:
         self.v, self.h = coords
         self.matrix = matrix
         self.in_direction = in_direction
-        self.out_direction = symbols_dict[in_direction][matrix[self.v][self.h]]
+        self.out_direction = symbol_dict[in_direction][matrix[self.v][self.h]]
     def next_Pipe(self):
         if self.out_direction == 'N':
             return Pipe((self.v - 1, self.h),self.matrix,'N',self.count+1)

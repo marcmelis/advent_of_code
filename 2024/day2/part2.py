@@ -6,41 +6,30 @@ with open('input.txt') as f:
         reports.append(nums)
 
 def check(report):
-    popped=False
     current = report[0]
     increasing = report[0] < report[1]
-    for i,n in enumerate(report[1:]):
+    for n in report[1:]:
         diff = abs(current - n)
         if  diff > 3 or diff < 1:
-            if popped:
-                return 0
-            else:
-                popped = True
-                report.pop(i+1)
-                continue
+            return 0
         if increasing:
             if current > n:
-                if popped:
-                    return 0
-                else:
-                    popped = True
-                    report.pop(i+1)
-                    continue
+                return 0
         else: #decreasing
             if current < n:
-                if popped:
-                    return 0
-                else:
-                    popped = True
-                    report.pop(i+1)
-                    continue
+                return 0
         current = n
     return 1
 
 correct = 0
 for report in reports:
-    c = check(report)
-    print(c)
-    correct+=c
+    if check(report) == 1:
+        correct+=1
+    else:
+        for n in range(len(report)):
+            r = report[:n] + report[n+1:]
+            if check(r):
+                correct+=1
+                break
 
 print(correct)
